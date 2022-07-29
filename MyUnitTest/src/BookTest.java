@@ -5,11 +5,11 @@ public class BookTest {
 	public void isbnShouldBeValid() {
 		
 		// Arrange
-		String expectedISBN = "324-5-47-896451-2";
+		String expectedISBN = "978-1-40-005292-9";
 		Book myBook = new Book();
 		
 		// Act
-		myBook.setISBN("324-5-47-896451-2");
+		myBook.setISBN("978-1-40-005292-9");
 		
 		// Assert
 		MyAssertion.assertEquals(expectedISBN, myBook.getISBN());
@@ -20,11 +20,11 @@ public class BookTest {
 	public void arrayShouldMatch() {
 		
 		// Arrange
-		String[] expectedArray = {"This", "is", "an", "array"};
+		String[] expectedArray = {"This", "is", "a", "string", "array"};
 		Book myBook = new Book();
 		
 		// Act
-		myBook.setArray(new String[] {"This", "is", "an", "array"});
+		myBook.setArray(new String[] {"This", "is", "a", "string", "array"});
 		
 		// Assert
 		MyAssertion.assertArrayEquals(expectedArray, myBook.getArray());
