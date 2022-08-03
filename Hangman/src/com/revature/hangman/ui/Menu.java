@@ -43,19 +43,7 @@ public class Menu {
 				while (scoreLimit < 1) {
 					try {
 					
-						int inputLimit = Integer.parseInt(scanner.nextLine());
-						
-						if (inputLimit % 2 == 0) {
-							
-							logger.log(LogLevel.WARN, "User entered even number for scoreLimit.");
-							
-							System.out.println("Invalid input. Please enter an odd number.");
-							
-						} else {
-							
-							scoreLimit = inputLimit;
-							
-						}
+						scoreLimit = Integer.parseInt(scanner.nextLine());
 						
 					} catch (Exception ex) {
 						
