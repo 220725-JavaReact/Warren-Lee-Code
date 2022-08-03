@@ -7,8 +7,9 @@ import com.revature.hangman.util.Logger.*;
 
 public class Game {
 	
-	private static Logger logger = Logger.getLogger();
+	private Logger logger = Logger.getLogger();
 	
+	private Scanner scanner = new Scanner(System.in);
 	private Player[] players;
 	private int scoreLimit;
 	private String[] mysteryWords = {"zebra", "coordinate", "royal", "thunder"};
@@ -21,8 +22,6 @@ public class Game {
 	}
 	
 	public void startGame() {
-		
-		Scanner scanner = new Scanner(System.in);
 		
 		do {
 			

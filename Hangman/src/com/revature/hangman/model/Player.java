@@ -5,7 +5,7 @@ import com.revature.hangman.util.Logger.*;
 
 public class Player {
 	
-	private static Logger logger = Logger.getLogger();
+	private Logger logger = Logger.getLogger();
 	
 	private String name;
 	private int score;

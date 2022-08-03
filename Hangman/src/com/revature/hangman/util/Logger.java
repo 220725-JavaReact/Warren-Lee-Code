@@ -59,21 +59,21 @@ public class Logger {
 		
 	}
 	
-	public static void log(LogLevel level, String message) {
+	public void log(LogLevel level, String message) {
 		
 		Log newLog = new Log(level, LocalDateTime.now(), message);
 		writeToFile(newLog.toString());
 		
 	}
 	
-	public static void log(LogLevel level, String message, Exception ex) {
+	public void log(LogLevel level, String message, Exception ex) {
 		
 		Log newLog = new Log(level, LocalDateTime.now(), message + " " + ex.toString());
 		writeToFile(newLog.toString());
 		
 	}
 	
-	private static void writeToFile(String log) {
+	private void writeToFile(String log) {
 		
 		try {
 			
